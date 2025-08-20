@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dành tặng 🎁 cho các bạn nữ 12A4</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background">
+    <div class="container" id="login-container">
+      <img src="flower.png" alt="hoa" class="corner-art" />
+      <h1>Dành tặng 🎁 cho các bạn nữ 12A4 ngày 20/10</h1>
+      <p class="subtitle">Nhớ nhập họ và tên cùng với mật khẩu để đăng nhập nhé 😘</p>
+      <form id="login-form">
+        <label for="fullname">Họ và tên</label>
+        <input list="names" id="fullname" name="fullname" placeholder="Nhập họ và tên" required />
+        <datalist id="names">
+          <option value="Nguyễn Thị An">
+          <option value="Trần Minh Anh">
+          <option value="Lê Ngọc Châu">
+          <option value="Phạm Thanh Dung">
+          <option value="Vũ Bảo Hà">
+        </datalist>
+
+        <label for="password">Mật khẩu</label>
+        <div class="password-row">
+          <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required />
+          <button type="button" id="togglePassword" aria-label="Hiện/ẩn mật khẩu">👁️</button>
+        </div>
+
+        <button type="submit" class="btn-login">Đăng nhập</button>
+      </form>
+      <div class="icons">
+        <img src="butterflies.png" alt="butterflies" />
+      </div>
+    </div>
+
+    <!-- Gift container (ẩn ban đầu) -->
+    <div id="gift-container" style="display:none;">
+      <img id="gift-box" src="gift.svg" alt="Hộp quà" />
+      <audio id="boom-sound" src="boom.wav"></audio>
+      <canvas id="fireworks-canvas"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

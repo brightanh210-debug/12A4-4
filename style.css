@@ -1,0 +1,40 @@
+
+/* Nền pastel */
+* { box-sizing: border-box; }
+body, html { height: 100%; margin: 0; font-family: 'Segoe UI', Tahoma, sans-serif; background: linear-gradient(135deg, #ffdfe9 0%, #ffeef8 100%); }
+
+/* Container login */
+.container { max-width: 480px; margin: 6vh auto; background: rgba(255,255,255,0.95); border-radius: 20px; padding: 28px; box-shadow: 0 10px 30px rgba(0,0,0,0.12); position: relative; text-align: center; }
+.container .corner-art { width: 100px; position: absolute; top: -40px; left: 20px; opacity: 0.95; filter: drop-shadow(0 6px 10px rgba(0,0,0,0.08)); }
+h1 { color: #d43e79; margin: 6px 0 4px; font-size: 22px; }
+.subtitle { color: #666; margin-bottom: 18px; font-size: 14px; }
+
+label { display:block; text-align:left; font-weight:600; color:#444; margin:12px 0 6px; }
+input[list], input[type=text], input[type=password] { width:100%; padding:12px 12px; border-radius:10px; border:2px solid #ffd6e8; outline:none; transition:0.25s; font-size:14px; }
+input:focus { border-color:#ff80bf; box-shadow: 0 6px 20px rgba(255,179,217,0.25); }
+
+.password-row { display:flex; gap:8px; align-items:center; }
+.password-row input { flex:1; }
+#togglePassword { background:transparent; border:none; cursor:pointer; font-size:18px; }
+
+.btn-login { margin-top:16px; width:100%; padding:12px; border-radius:12px; border:none; background:#ff66b3; color:white; font-size:16px; cursor:pointer; }
+.btn-login:hover { background:#e0559c; }
+
+/* butterflies decorative */
+.icons { margin-top:16px; }
+.icons img { width: 110px; opacity:0.95; }
+
+/* Gift container (full screen) */
+#gift-container { position: fixed; inset:0; display:flex; justify-content:center; align-items:center; background: linear-gradient(180deg,#fff0fa, #ffffff); z-index:1500; flex-direction:column; }
+#gift-box { width: 16vw; min-width:140px; max-width:240px; cursor:pointer; animation:shake 1s infinite; transition: transform 0.2s; }
+@keyframes shake { 0%{ transform: rotate(0deg); } 25%{ transform: rotate(6deg); } 50%{ transform: rotate(-6deg); } 75%{ transform: rotate(6deg); } 100%{ transform: rotate(0deg); } }
+
+/* Fireworks canvas overlay */
+#fireworks-canvas { position: absolute; inset:0; width:100%; height:100%; pointer-events:none; display:block; }
+
+/* Responsive tweaks */
+@media (max-width:600px) {
+  .container { margin: 4vh 12px; padding:20px; }
+  .icons img { width:80px; }
+  #gift-box { width: 36vw; }
+}
