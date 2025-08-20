@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quà tặng 20/10</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <h1>Dành tặng 🎁 cho các bạn nữ 12A4 ngày 20/10</h1>
+            <p>Nhớ nhập họ và tên cùng với mật khẩu để đăng nhập nhé 😘</p>
+            
+            <form>
+                <label for="fullname">Họ và tên:</label>
+                <input list="names" id="fullname" name="fullname" placeholder="Nhập họ và tên" required>
+                <datalist id="names">
+                    <option value="Nguyễn Thị An">
+                    <option value="Trần Minh Anh">
+                    <option value="Lê Ngọc Châu">
+                    <option value="Phạm Thanh Dung">
+                    <option value="Vũ Bảo Hà">
+                </datalist>
+
+                <label for="password">Mật khẩu:</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+                    <button type="button" id="togglePassword">👁️</button>
+                </div>
+
+                <button type="submit" class="btn-login">Đăng nhập</button>
+            </form>
+
+            <div class="icons">
+                <span>🌸</span>
+                <span>💕</span>
+                <span>🌸</span>
+                <span>💖</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
